@@ -12,8 +12,8 @@ while director_index < nds.length do
       grand_total += nds[director_index][:movies][movie_index][:worldwide_gross]
       movie_index += 1
     end
-  result[director_index] = grand_total
+  result[nds[director_index]] = grand_total
   director_index += 1
   end 
-pp result[1]
+pp result
 end
